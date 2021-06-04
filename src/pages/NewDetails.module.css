@@ -1,0 +1,21 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.detailsContainer > div {
+  width: 90%;
+}
+
+.detailsContainer img,
+.detailsContainer figure{
+  margin: 0;
+}
+
+@media (min-width: 1040px) {
+  .detailsContainer > div {
+    width: 800px;
+  }
+}

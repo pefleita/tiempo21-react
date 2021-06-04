@@ -1,0 +1,14 @@
+.newsGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.newsGrid ul {
+  width: 90%;
+}
+
+@media (min-width: 1040px) {
+  .newsGrid ul {
+    width: 800px;
+  }
+}
