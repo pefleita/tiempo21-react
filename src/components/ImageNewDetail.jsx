@@ -18,7 +18,7 @@ export function ImageNewDetail({ image_id }) {
   return (
     <img
       width={800}
-      height={400}
+      height={430}
       className={styles.imageNewDetail}
       src={imagen.source_url}
       alt=""

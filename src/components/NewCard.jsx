@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./NewCard.module.css";
+import { FiCalendar } from "react-icons/fi";
 
 export function NewCard({ noticia }) {
   return (
@@ -17,9 +18,10 @@ export function NewCard({ noticia }) {
         />
         <div>
           <h3 dangerouslySetInnerHTML={{ __html: noticia.title.rendered }}></h3>
-          <span className={styles.date}>
-            {new Date(noticia.date).toLocaleDateString()}
-          </span>
+          <div className={styles.date}>
+            <FiCalendar size={15} />
+            <span>{new Date(noticia.date).toLocaleDateString()}</span>
+          </div>
         </div>
       </Link>
     </li>

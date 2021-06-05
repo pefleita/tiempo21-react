@@ -25,7 +25,19 @@
 }
 
 .date {
+  display: flex;
+  align-items: center;
   font-size: 10pt;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.date svg{
+  color: #777;
+}
+
+.date span{
+  margin-left: 5px;
 }
 
 @media (max-width: 560px) {
