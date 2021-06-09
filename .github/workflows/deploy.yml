@@ -23,7 +23,6 @@ jobs:
         git config --global user.email penrrique07@gmail.com
         git config --global user.name pefleita
     - name: deploy the app
-      uses: peaceiris/actions-gh-pages@v3
       run: npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GH_SECRET }}
