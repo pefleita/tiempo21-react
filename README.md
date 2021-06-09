@@ -5,4 +5,3 @@ Reactjs practice project consuming services from a Wordpress API.
 ## View Demo
 
 [Tiempo21 Noticias Demo](https://pefleita.github.io/tiempo21-react/?target=_blank)
-<a href="http://example.com/" target="_blank">Hello, world!</a>
