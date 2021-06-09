@@ -9,6 +9,16 @@
   width: 90%;
 }
 
+.detailsContainer p {
+  font-size: 13pt;
+  line-height: 18pt;
+}
+
+.detailsContainer h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .detailsContainer img,
 .detailsContainer figure {
   margin: 0;
@@ -20,7 +30,7 @@
   min-height: 300px;
 }
 
-.imageContainer img{
+.imageContainer img {
   background-color: #e1e1e1;
 }
 
@@ -34,26 +44,26 @@
   background-color: #e1e1e1;
 }
 
-.meta{
+.meta {
   display: flex;
   justify-content: flex-start;
   list-style: none;
   padding: 0;
-  font-size: 10pt;
-  font-weight: 600;
+  font-size: 11pt;
+  font-weight: 500;
 }
 
-.meta li{
+.meta li {
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
 
-.meta li svg{
-color: #777;
+.meta li svg {
+  color: #777;
 }
 
-.meta li span{
+.meta li span {
   margin-left: 5px;
 }
 

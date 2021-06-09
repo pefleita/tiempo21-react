@@ -1,34 +1,29 @@
-import { useEffect, useState } from "react";
+import { useFetch } from "../hooks/useFetch";
 import { useQuery } from "../hooks/useQuery";
-import { get } from "../utils/httpClient";
+import { Error } from "./Error";
 import { NewCard } from "./NewCard";
-import styles from "./NewsGrid.module.css";
 import { Spinner } from "./Spinner";
+import styles from "./NewsGrid.module.css";
 
 export function NewsGrid() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [noticias, setNoticias] = useState([]);
-
   const query = useQuery();
   const search = query.get("search");
+  const searchUrl = search ? "posts?_embed&search=" + search : "posts?_embed";
 
-  useEffect(() => {
-    setIsLoading(true);
-    const searchUrl = search ? "posts?_embed&search=" + search : "posts?_embed";
-    get(searchUrl).then((data) => {
-      setNoticias(data);
-      setIsLoading(false);
-    });
-  }, [search]);
+  const { data, error, isLoading } = useFetch(searchUrl);
 
   if (isLoading) {
     return <Spinner />;
   }
 
+  if (error) {
+    return <Error err={error} />;
+  }
+
   return (
     <div className={styles.newsGrid}>
       <ul>
-        {noticias.map((noticia) => {
+        {data.map((noticia) => {
           return <NewCard key={noticia.id} noticia={noticia} />;
         })}
       </ul>

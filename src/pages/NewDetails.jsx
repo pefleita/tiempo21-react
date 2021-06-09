@@ -1,31 +1,27 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-//import { ImageNewDetail } from "../components/ImageNewDetail";
 import { FiCalendar, FiUser } from "react-icons/fi";
 import { Spinner } from "../components/Spinner";
-import { get } from "../utils/httpClient";
 import styles from "./NewDetails.module.css";
+import { useFetch } from "../hooks/useFetch";
+import { Error } from "../components/Error";
 
 export function NewDetails() {
   const { newSlug } = useParams();
-  const [isLoading, setIsLoading] = useState(true);
-  const [noticia, setNoticia] = useState(null);
+  const url = "posts?_embed&slug=" + newSlug;
 
-  useEffect(() => {
-    setIsLoading(true);
-    get("posts?_embed&slug=" + newSlug).then((data) => {
-      setNoticia(data);
-      setIsLoading(false);
-    });
-  }, [newSlug]);
+  const { data, error, isLoading } = useFetch(url);
 
   if (isLoading) {
     return <Spinner />;
   }
 
+  if (error) {
+    return <Error err={error} />;
+  }
+
   return (
     <>
-      {noticia.map((noticia) => {
+      {data.map((noticia) => {
         return (
           <div key={noticia.id} className={styles.detailsContainer}>
             <div>

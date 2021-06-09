@@ -2,7 +2,6 @@
   list-style: none;
   font-size: 1.3rem;
   margin-bottom: 30px;
-  /*text-align: center;*/
 }
 
 .newCard a {
@@ -13,6 +12,9 @@
 .newCard h3 {
   margin-top: 0;
   margin-bottom: 0;
+  color: #555;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .newCard:hover {
@@ -28,15 +30,15 @@
   display: flex;
   align-items: center;
   font-size: 10pt;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 10px;
 }
 
-.date svg{
+.date svg {
   color: #777;
 }
 
-.date span{
+.date span {
   margin-left: 5px;
 }
 

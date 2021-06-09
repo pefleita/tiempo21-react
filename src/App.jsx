@@ -8,10 +8,10 @@ export function App() {
     <Router>
       <header>
         <Link to="/">
-          <h1 className={styles.title}>Noticias</h1>
+          <h1 className={styles.title}>Tiempo21 Noticias</h1>
         </Link>
       </header>
-      <main>
+      <main className={styles.siteContainer}>
         <Switch>
           <Route exact path="/news/:newSlug">
             <NewDetails />
@@ -21,6 +21,10 @@ export function App() {
           </Route>
         </Switch>
       </main>
+      <footer className={styles.footer}>
+        © {new Date().getFullYear()} <br /> Tiempo21 - Radio Victoria, Las
+        Tunas, Cuba.
+      </footer>
     </Router>
   );
 }
