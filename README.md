@@ -4,4 +4,4 @@ Reactjs practice project consuming services from a Wordpress API.
 
 ## View Demo
 
-https://pefleita.github.io/tiempo21-react/
+[link](https://pefleita.github.io/tiempo21-react/){:target="_blank"}
