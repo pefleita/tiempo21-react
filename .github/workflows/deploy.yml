@@ -16,13 +16,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{matrix.node-version}}
-    - name: install packages
+    - name: Install Packages
       run: npm install
-    - name: registry github user
-      run: |
-        git config --global user.email $user_email
-        git config --global user.name $user_name
-    - name: deploy the app
-      run: npm run deploy
-      env:
+    - name: Build page
+      run: npm run build
+    - name: Deploy to gh-pages
+      uses: paceiris/actions-gh-pages@v3
+      with:
         GITHUB_TOKEN: ${{ secrets.GH_SECRET }}
+        publish_dir: ./build
