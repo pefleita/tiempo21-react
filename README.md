@@ -1,6 +1,6 @@
 # Tiempo21 Noticias
 
-Reactjs practice project consuming services from a Wordpress API
+Reactjs practice project consuming services from a Wordpress API.
 
 ## Test App
 
