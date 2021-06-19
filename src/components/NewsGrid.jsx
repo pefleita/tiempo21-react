@@ -29,6 +29,7 @@ export function NewsGrid() {
       setNoticias([]);
     }
     setNoticias((noticias) => [...noticias, ...newsList]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newsList]);
 
   if (!isLoading) {

@@ -9,7 +9,7 @@ export function NewDetails() {
   const { newSlug } = useParams();
   const url = "posts?_embed&slug=" + newSlug;
 
-  const { newsList, error, isLoading, totalPages } = useFetch(url);
+  const { newsList, error, isLoading } = useFetch(url);
 
   if (isLoading) {
     return <Spinner />;
