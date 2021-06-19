@@ -1,0 +1,39 @@
+.newsGrid,
+.loadMoreButton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.newsGrid ul,
+.loadMoreButton {
+  width: 90%;
+}
+
+.loadMoreButton button {
+  border-radius: 5px;
+  border: 1px solid #149241;
+  line-height: 1.2;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+}
+
+.loadMoreButton button.btnEnable {
+  cursor: pointer;
+  background-color: #04aa6d;
+  color: #fff;
+}
+
+.loadMoreButton button.btnDisable {
+  cursor: wait;
+  background: #e8e8e8;
+  color: #04aa6d;
+}
+
+@media (min-width: 1040px) {
+  .newsGrid ul,
+  .loadMoreButton {
+    width: 800px;
+  }
+}

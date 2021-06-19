@@ -1,0 +1,24 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.errorContainer div {
+  width: 90%;
+}
+
+.errorContainer div {
+  border: 1px solid #d13b3b;
+  background-color: #ec5c5c78;
+  border-radius: 10px;
+  padding: 30px 10px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1040px) {
+  .errorContainer div {
+    width: 800px;
+  }
+}
