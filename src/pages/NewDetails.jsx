@@ -11,8 +11,6 @@ export function NewDetails() {
 
   const { newsList, error, isLoading, totalPages } = useFetch(url);
 
-  //console.log(totalPages);
-
   if (isLoading) {
     return <Spinner />;
   }
