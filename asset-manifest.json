@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tiempo21-react/static/css/main.74b15e38.chunk.css",
-    "main.js": "/tiempo21-react/static/js/main.8e19ffec.chunk.js",
-    "main.js.map": "/tiempo21-react/static/js/main.8e19ffec.chunk.js.map",
+    "main.css": "/tiempo21-react/static/css/main.e40bbb0b.chunk.css",
+    "main.js": "/tiempo21-react/static/js/main.97cb129c.chunk.js",
+    "main.js.map": "/tiempo21-react/static/js/main.97cb129c.chunk.js.map",
     "runtime-main.js": "/tiempo21-react/static/js/runtime-main.653bdbd9.js",
     "runtime-main.js.map": "/tiempo21-react/static/js/runtime-main.653bdbd9.js.map",
-    "static/js/2.56c66a78.chunk.js": "/tiempo21-react/static/js/2.56c66a78.chunk.js",
-    "static/js/2.56c66a78.chunk.js.map": "/tiempo21-react/static/js/2.56c66a78.chunk.js.map",
+    "static/js/2.4bd0dc1d.chunk.js": "/tiempo21-react/static/js/2.4bd0dc1d.chunk.js",
+    "static/js/2.4bd0dc1d.chunk.js.map": "/tiempo21-react/static/js/2.4bd0dc1d.chunk.js.map",
     "index.html": "/tiempo21-react/index.html",
-    "static/css/main.74b15e38.chunk.css.map": "/tiempo21-react/static/css/main.74b15e38.chunk.css.map",
-    "static/js/2.56c66a78.chunk.js.LICENSE.txt": "/tiempo21-react/static/js/2.56c66a78.chunk.js.LICENSE.txt"
+    "static/css/main.e40bbb0b.chunk.css.map": "/tiempo21-react/static/css/main.e40bbb0b.chunk.css.map",
+    "static/js/2.4bd0dc1d.chunk.js.LICENSE.txt": "/tiempo21-react/static/js/2.4bd0dc1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.653bdbd9.js",
-    "static/js/2.56c66a78.chunk.js",
-    "static/css/main.74b15e38.chunk.css",
-    "static/js/main.8e19ffec.chunk.js"
+    "static/js/2.4bd0dc1d.chunk.js",
+    "static/css/main.e40bbb0b.chunk.css",
+    "static/js/main.97cb129c.chunk.js"
   ]
 }
