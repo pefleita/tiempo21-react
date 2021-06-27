@@ -12,10 +12,10 @@ export function NewsGrid() {
 
   const query = useQuery();
   const search = query.get("search");
-  
+
   useEffect(() => {
-    setPage(1);
     setNoticias([]);
+    setPage(1);
   }, [search]);
 
   const searchUrl = search
@@ -29,7 +29,7 @@ export function NewsGrid() {
       setNoticias([]);
     }
     setNoticias((noticias) => [...noticias, ...newsList]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newsList]);
 
   if (!isLoading) {
@@ -58,7 +58,11 @@ export function NewsGrid() {
       </ul>
       <div className={styles.loadMoreButton}>
         {totalPages !== page && (
-          <button disabled={isLoading ? true : false} className={isLoading ? styles.btnDisable : styles.btnEnable} onClick={() => setPage(page + 1)}>
+          <button
+            disabled={isLoading ? true : false}
+            className={isLoading ? styles.btnDisable : styles.btnEnable}
+            onClick={() => setPage(page + 1)}
+          >
             {isLoading ? "Cargando..." : "Cargar más"}
           </button>
         )}

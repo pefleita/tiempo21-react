@@ -6,6 +6,10 @@
   margin-top: 30px;
 }
 
+.newsGrid ul{
+  padding: 0;
+}
+
 .newsGrid ul,
 .loadMoreButton {
   width: 90%;
@@ -32,8 +36,7 @@
 }
 
 @media (min-width: 1040px) {
-  .newsGrid ul,
-  .loadMoreButton {
+  .newsGrid ul{
     width: 800px;
   }
 }

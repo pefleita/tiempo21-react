@@ -43,8 +43,11 @@
 }
 
 @media (max-width: 560px) {
+  .newCard a {
+    flex-direction: column;
+  }
   .newImage {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }

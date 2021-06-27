@@ -12,8 +12,8 @@ export function useFetch(url) {
 
   useEffect(() => {
     setIsLoading(true);
-    const fetchData = async () => {
-      await fetch(fullUrl)
+    const fetchData = () => {
+      fetch(fullUrl)
         .then((res) => {
           if (!res.ok) {
             throw Error(
